@@ -18,23 +18,38 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family-inter);
+    
 }
 
 body {
     background-color: var(--main-background);
 }
 
-h1 {
+h1, 
+p.stat {
     color: var(--main-heading-stats);
+    font-weight: 700;
 }
 
-h5 {
-    color: var(--stat-heading);
-    font-weight: normal;
+h1 {
+    font-size: 25px;
+    max-width: 80%;
+    margin-bottom: 2rem;
 }
 
 p {
     color: var(--main-paragraph);
+    font-weight: 400;
+    font-size: var(--body-font-size);
+    margin-bottom: 2rem;
+}
+
+p.stat {
+    font-size: 20px;
+}
+
+p.category {
+    color: var(--stat-heading);
     font-weight: 400;
 }
 
@@ -43,8 +58,7 @@ p {
     top: 50%;
     left: 50%;
     width: 75%;
-    /* max-width: 1080px; */
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     transform: translate(-50%, -50%);
     object-fit: contain;
     overflow: hidden;
@@ -57,9 +71,11 @@ p {
 }
 
 .content {
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 4rem;
 }
 
 .stats {
     display: flex;
+    position: absolute;
+    bottom: 0;
 }
