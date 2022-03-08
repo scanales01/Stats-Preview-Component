@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles/styles.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -15,19 +19,32 @@
   </style>
 </head>
 <body>
+  <main>
+    <div class="card-container">
+      <article class="content">
+        <h1>Get insights that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
 
-  Get insights that help your business grow.
+        <div class="stats">
+          <h1>10k+</h1>
+          <h5>COMPANIES</h5>
+          <h1>314</h1> 
+          <h5>TEMPLATES</h5>
+          <h1>12M+</h1>
+          <h5>QUERIES</h5>
+        </div>
+      </article>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <img src="assets/images/image-header-desktop.jpg" alt="header-image" loading="lazy"/>
+    </div>
+  </main>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
+<!-- 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
