@@ -25,6 +25,10 @@ body {
     background-color: var(--main-background);
 }
 
+.highlight {
+    color: var(--accent);
+}
+
 h1, 
 p.stat {
     color: var(--main-heading-stats);
@@ -57,18 +61,36 @@ p.category {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 75%;
+    width: 1080px;
     border-radius: 0.5rem;
     transform: translate(-50%, -50%);
-    object-fit: contain;
+    object-fit: scale-down;
     overflow: hidden;
     background-color: var(--card-background);
     display: flex;
 }
 
-.card-container > img {
-    width: 50%;
+img {
+    height: auto;
+    display: block;
 }
+
+.accent {
+    width: 50%;
+    position: relative;
+}
+
+.accent:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsla(277, 64%, 61%, 0.45);
+}
+
 
 .content {
     margin: 4rem;
