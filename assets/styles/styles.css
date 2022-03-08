@@ -36,8 +36,7 @@ p.stat {
 }
 
 h1 {
-    font-size: 25px;
-    max-width: 80%;
+    font-size: 35px;
     margin-bottom: 2rem;
 }
 
@@ -93,6 +92,7 @@ img {
 
 
 .content {
+    width: 50%;
     margin: 4rem;
 }
 
