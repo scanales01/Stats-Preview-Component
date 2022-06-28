@@ -1,0 +1,19 @@
+@mixin statNum {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+@mixin statLabel {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .75em;
+  line-height: 2.1em;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
